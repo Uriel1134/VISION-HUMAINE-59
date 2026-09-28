@@ -44,17 +44,11 @@ const securityHeaders = [
 ];
 
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
-  poweredByHeader: false, // Supprime l'en-tête X-Powered-By pour la sécurité
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: securityHeaders,
-      },
-    ];
-  },
+  poweredByHeader: false,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',

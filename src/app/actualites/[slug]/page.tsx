@@ -9,6 +9,12 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateStaticParams() {
+  return ARTICLES_DATA.map((article) => ({
+    slug: article.slug,
+  }));
+}
+
 export default async function ArticleDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const article = ARTICLES_DATA.find((a) => a.slug === slug);
