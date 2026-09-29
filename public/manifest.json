@@ -1,0 +1,21 @@
+{
+  "name": "VISION HUMAINE 59 - Association Humanitaire",
+  "short_name": "VH59",
+  "description": "Association humanitaire pour l'éducation, la santé, la nutrition et la protection des enfants au Bénin.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFEFC",
+  "theme_color": "#292D77",
+  "icons": [
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
