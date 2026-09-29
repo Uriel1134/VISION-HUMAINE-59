@@ -8,8 +8,8 @@ export const NGO_INFO = {
   vision: "Améliorer durablement les conditions de vie des enfants en situation précaire en Afrique grâce à des actions humanitaires, éducatives et sanitaires concertées.",
   description: "VISION HUMAINE 59 est une association humanitaire engagée pour apporter un soutien concret, mesurable et pérenne aux enfants les plus vulnérables ainsi qu'à leurs communautés locales.",
   address: "Cotonou, République du Bénin / Siège International & Antennes Locales",
-  phone: "+229 01 23 45 67",
-  email: "contact@visionhumaine59.org",
+  phone: "+229 01 66 00 70 47",
+  email: "contact@vision-humaine59.com",
   registration: "Association Humanitaire déclarée - Journal Officiel",
   foundedYear: 2024,
   stats: {
@@ -361,32 +361,20 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
   },
   {
     id: "dassa-3",
-    title: "Troisième édition de partage dans le département des Collines à Dassa-Zoumè",
-    shortTitle: "Dassa-Zoumè (Collines) - 3ème Édition",
+    title: "Mission de partage dans le département des Collines à Dassa-Zoumè",
+    shortTitle: "Dassa-Zoumè (Collines)",
     location: "Dassa-Zoumè",
     department: "Collines",
-    edition: "3ème Édition",
+    edition: "Édition Collines",
     date: "Septembre 2026",
-    badge: "Département des Collines",
-    description: "Consolidation de notre impact continu dans le département des Collines : déploiement de nouveaux kits scolaires complets, denrées nutritionnelles et vêtements pour soutenir durablement les enfants et familles de Dassa-Zoumè.",
+    badge: "Habits & Jouets",
+    description: "Mission solidaire dans le département des Collines : distribution de vêtements, habits et jouets aux enfants et familles pour leur apporter réconfort et dignité.",
     photos: [
       {
         id: "dassa3-1",
         src: "/images/galerie/dassa-3/dassa-3-1.jpg",
-        caption: "Arrivée et alignement des kits scolaires et vivres destinés aux écoliers des Collines",
-        alt: "Troisième édition de partage à Dassa-Zoumè - Collines"
-      },
-      {
-        id: "dassa3-2",
-        src: "/images/galerie/dassa-3/dassa-3-2.jpg",
-        caption: "Cérémonie de remise et rassemblement populaire avec les parents et les bénéficiaires",
-        alt: "Rassemblement pour la distribution solidaire à Dassa-Zoumè"
-      },
-      {
-        id: "dassa3-3",
-        src: "/images/galerie/dassa-3/dassa-3-3.jpg",
-        caption: "Sourires et fierté des jeunes élèves recevant leurs dotations de rentrée scolaire",
-        alt: "Élèves recevant leurs fournitures à Dassa-Zoumè 3ème édition"
+        caption: "Remise officielle et distribution de vêtements, habits et jouets aux enfants et familles de Dassa-Zoumè",
+        alt: "Distribution de vêtements et jouets à Dassa-Zoumè dans les Collines"
       }
     ]
   },
@@ -399,7 +387,7 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
     edition: "1ère Édition",
     date: "Septembre 2026",
     badge: "Sœurs Oblates & Orphelinat St Dominique",
-    description: "Inauguration de notre partenariat humanitaire avec l'orphelinat Saint Dominique des Sœurs Oblates à Azowlissè. Dotation substantielle en sacs de riz, huiles, produits d'hygiène, vêtements et kits éducatifs.",
+    description: "Inauguration de notre partenariat humanitaire avec l'orphelinat Saint Dominique des Sœurs Oblates à Azowlissè. Dotation en vivres, produits d'hygiène, vêtements et kits éducatifs.",
     photos: [
       {
         id: "azow1-1",
@@ -408,34 +396,16 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
         alt: "Première édition à l'orphelinat Saint Dominique d'Azowlissè"
       },
       {
-        id: "azow1-2",
-        src: "/images/galerie/azowlisse-1/azowlisse-1-2.jpg",
-        caption: "Accueil chaleureux par les Sœurs Oblates et les enfants de la structure d'hébergement",
-        alt: "Accueil par les Sœurs Oblates à Azowlissè"
-      },
-      {
-        id: "azow1-3",
-        src: "/images/galerie/azowlisse-1/azowlisse-1-3.jpg",
-        caption: "Déchargement ordonné et inventaire des vivres au profit des pensionnaires",
-        alt: "Inventaire et déchargement des dons à Azowlissè"
-      },
-      {
         id: "azow1-4",
         src: "/images/galerie/azowlisse-1/azowlisse-1-4.jpg",
-        caption: "Moment de prière et de bénédiction partagé avec la communauté religieuse et les enfants",
-        alt: "Bénédiction et recueillement solidaire à Azowlissè"
-      },
-      {
-        id: "azow1-5",
-        src: "/images/galerie/azowlisse-1/azowlisse-1-5.jpg",
-        caption: "Échange individuel et écoute attentive des besoins spécifiques des mineurs accueillis",
-        alt: "Échange avec les orphelins d'Azowlissè"
+        caption: "Accueil chaleureux et concertation avec les Sœurs Oblates responsables du centre",
+        alt: "Accueil par les Sœurs Oblates à Azowlissè"
       },
       {
         id: "azow1-6",
         src: "/images/galerie/azowlisse-1/azowlisse-1-6.jpg",
-        caption: "Remise solennelle des kits d'hygiène préventive et de fournitures scolaires",
-        alt: "Remise des fournitures scolaires aux enfants d'Azowlissè"
+        caption: "Remise solennelle des dons matériels, jouets et fournitures aux pensionnaires",
+        alt: "Remise des dons aux pensionnaires d'Azowlissè"
       },
       {
         id: "azow1-7",
@@ -444,22 +414,10 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
         alt: "Vue d'ensemble de la distribution à Azowlissè"
       },
       {
-        id: "azow1-8",
-        src: "/images/galerie/azowlisse-1/azowlisse-1-8.jpg",
-        caption: "Soutien logistique et organisationnel assuré par les bénévoles de VISION HUMAINE 59",
-        alt: "Bénévoles VISION HUMAINE 59 à Azowlissè"
-      },
-      {
         id: "azow1-9",
         src: "/images/galerie/azowlisse-1/azowlisse-1-9.jpg",
         caption: "Émouvant portrait de groupe scellant une amitié et un soutien indéfectible",
         alt: "Portrait de groupe avec les enfants et les sœurs d'Azowlissè"
-      },
-      {
-        id: "azow1-10",
-        src: "/images/galerie/azowlisse-1/azowlisse-1-10.jpg",
-        caption: "Clôture festive de la première édition de partage dans l'Ouémé",
-        alt: "Clôture de la 1ère édition de partage à Azowlissè"
       }
     ]
   },
@@ -483,24 +441,12 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
       {
         id: "azow2-2",
         src: "/images/galerie/azowlisse-2/azowlisse-2-2.jpg",
-        caption: "Retrouvailles chaleureuses avec les enfants et les sœurs responsables",
-        alt: "Retrouvailles fraternelles à Azowlissè - 2ème édition"
-      },
-      {
-        id: "azow2-3",
-        src: "/images/galerie/azowlisse-2/azowlisse-2-3.jpg",
-        caption: "Distribution des colis de vêtements, chaussures et matériels éducatifs",
+        caption: "Distribution des colis de vêtements, chaussures et matériels de soutien",
         alt: "Distribution de colis et vêtements aux pensionnaires"
       },
       {
         id: "azow2-4",
         src: "/images/galerie/azowlisse-2/azowlisse-2-4.jpg",
-        caption: "Atelier de partage, écoute active et motivation pour la réussite des examens scolaires",
-        alt: "Atelier de motivation et d'apprentissage à l'orphelinat"
-      },
-      {
-        id: "azow2-5",
-        src: "/images/galerie/azowlisse-2/azowlisse-2-5.jpg",
         caption: "Grande photo de famille témoignant de la persévérance et de la solidarité en action",
         alt: "Grande photo de famille 2ème édition Azowlissè"
       }

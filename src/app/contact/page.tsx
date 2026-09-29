@@ -131,7 +131,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <a
-                  href={`https://wa.me/22901234567?text=Bonjour%20VISION%20HUMAINE%2059,%20je%20souhaite%20vous%20contacter`}
+                  href={`https://wa.me/2290166007047?text=Bonjour%20VISION%20HUMAINE%2059,%20je%20souhaite%20vous%20contacter`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors"
