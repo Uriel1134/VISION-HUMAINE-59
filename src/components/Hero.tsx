@@ -5,7 +5,7 @@ import { ArrowRight, ShieldCheck, CheckCircle2, Sparkles } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#FFFEFC] min-h-[340px] sm:min-h-[440px] lg:min-h-[540px] flex items-center border-b border-slate-100">
+    <section className="relative w-full overflow-hidden bg-[#FAF8F5] min-h-[340px] sm:min-h-[440px] lg:min-h-[540px] flex items-center border-b border-slate-200/80">
       
       {/* 1. Full-Width Authentic Background Photo (Active on Mobile & Desktop) */}
       <div className="absolute inset-0 w-full h-full z-0">
@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 pointer-events-none hidden lg:block"
           style={{
-            background: 'linear-gradient(to right, #FFFEFC 0%, #FFFEFC 38%, rgba(255, 254, 252, 0.96) 50%, rgba(255, 254, 252, 0.72) 65%, rgba(255, 254, 252, 0.15) 85%, transparent 100%)'
+            background: 'linear-gradient(to right, #FAF8F5 0%, #FAF8F5 38%, rgba(250, 248, 245, 0.96) 50%, rgba(250, 248, 245, 0.72) 65%, rgba(250, 248, 245, 0.15) 85%, transparent 100%)'
           }}
         />
 
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 pointer-events-none lg:hidden"
           style={{
-            background: 'linear-gradient(175deg, rgba(255, 254, 252, 0.97) 0%, rgba(255, 254, 252, 0.92) 40%, rgba(255, 254, 252, 0.75) 70%, rgba(255, 254, 252, 0.35) 100%)'
+            background: 'linear-gradient(175deg, rgba(250, 248, 245, 0.97) 0%, rgba(250, 248, 245, 0.92) 40%, rgba(250, 248, 245, 0.75) 70%, rgba(250, 248, 245, 0.35) 100%)'
           }}
         />
       </div>

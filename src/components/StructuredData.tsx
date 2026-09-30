@@ -17,13 +17,26 @@ export const StructuredData: React.FC = () => {
         slogan: NGO_INFO.tagline,
         telephone: NGO_INFO.phone,
         email: NGO_INFO.email,
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'Siège social et délégations terrain',
-          addressLocality: 'Cotonou',
-          addressCountry: 'BJ',
-        },
+        address: [
+          {
+            '@type': 'PostalAddress',
+            streetAddress: 'Siège social',
+            addressLocality: 'Cambrai',
+            postalCode: '59400',
+            addressCountry: 'FR',
+          },
+          {
+            '@type': 'PostalAddress',
+            streetAddress: 'Tchankpamè',
+            addressLocality: 'Cotonou',
+            addressCountry: 'BJ',
+          }
+        ],
         areaServed: [
+          {
+            '@type': 'Country',
+            name: 'France',
+          },
           {
             '@type': 'Country',
             name: 'Bénin',

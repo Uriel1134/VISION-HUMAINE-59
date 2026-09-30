@@ -34,7 +34,7 @@ const TESTIMONIALS = [
 
 export const TestimonialsSection: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 bg-[#FFFEFC] relative overflow-hidden" id="temoignages">
+    <section className="py-12 sm:py-16 bg-transparent relative overflow-hidden" id="temoignages">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}

@@ -109,10 +109,10 @@ export const ProjectsGallery: React.FC = () => {
   const currentPhoto = selectedPhotoIndex !== null ? displayedPhotos[selectedPhotoIndex] : null;
 
   return (
-    <section className="py-20 sm:py-28 bg-[#FBFDFF] relative overflow-hidden" id="galerie">
+    <section className="py-20 sm:py-28 relative overflow-hidden" id="galerie">
       
       {/* Subtle ambient background lighting */}
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-50/70 rounded-full blur-3xl pointer-events-none -z-0"></div>
+      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-50/50 rounded-full blur-3xl pointer-events-none -z-0"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

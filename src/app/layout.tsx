@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Image from 'next/image';
 import Script from 'next/script';
 import './globals.css';
 import { Header } from '@/components/Header';
@@ -95,7 +96,30 @@ export default function RootLayout({
       <head>
         <StructuredData />
       </head>
-      <body className="flex flex-col min-h-screen bg-[#FFFEFC] text-[#14172B] antialiased font-sans">
+      <body className="flex flex-col min-h-screen bg-[#FAF8F5] text-[#14172B] antialiased font-sans relative selection:bg-[#292D77] selection:text-[#FAF8F5]">
+        
+        {/* Fixed Watermark Background in Filigrane (Warm White Atmosphere) */}
+        <div 
+          className="fixed inset-0 pointer-events-none -z-10 flex items-center justify-center overflow-hidden select-none"
+          aria-hidden="true"
+        >
+          {/* Subtle Warm Light Ambient Blooms */}
+          <div className="absolute -top-32 -right-32 w-[650px] h-[650px] bg-[#292D77]/[0.025] rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 -left-32 w-[600px] h-[600px] bg-[#D72229]/[0.018] rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-32 right-1/4 w-[700px] h-[700px] bg-amber-500/[0.015] rounded-full blur-3xl"></div>
+
+          {/* Persistent subtle watermark logo in filigrane */}
+          <div className="relative w-[320px] h-[320px] sm:w-[480px] sm:h-[480px] lg:w-[620px] lg:h-[620px] opacity-[0.038] grayscale contrast-125">
+            <Image
+              src="/images/logo.jpg"
+              alt=""
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
+
         <Header />
         <main className="flex-grow">
           {children}
@@ -106,3 +130,4 @@ export default function RootLayout({
     </html>
   );
 }
+

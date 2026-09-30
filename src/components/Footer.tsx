@@ -44,21 +44,31 @@ export const Footer: React.FC = () => {
             </p>
 
             {/* Direct Contact Pills */}
-            <div className="space-y-2 pt-1 text-xs text-slate-300 font-medium">
+            <div className="space-y-2.5 pt-1 text-xs text-slate-300 font-medium">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-slate-400 block text-[11px] uppercase font-bold">Siège France</span>
+                  <span>{NGO_INFO.siegeFrance}</span>
+                </div>
+              </div>
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-[#D72229] flex-shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-slate-400 block text-[11px] uppercase font-bold">Annexe Bénin</span>
+                  <span>{NGO_INFO.annexeBenin}</span>
+                </div>
+              </div>
               <div className="flex items-center gap-2.5">
-                <MapPin className="w-4 h-4 text-[#D72229] flex-shrink-0" />
-                <span>Cotonou, République du Bénin</span>
+                <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <a href={`tel:${NGO_INFO.phoneRaw}`} className="hover:text-white transition-colors">
+                  {NGO_INFO.phone} <span className="text-[11px] text-emerald-400 font-semibold">(Appel / WhatsApp)</span>
+                </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-indigo-400 flex-shrink-0" />
                 <a href={`mailto:${NGO_INFO.email}`} className="hover:text-white transition-colors">
                   {NGO_INFO.email}
-                </a>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <a href={`tel:${NGO_INFO.phone}`} className="hover:text-white transition-colors">
-                  {NGO_INFO.phone}
                 </a>
               </div>
             </div>

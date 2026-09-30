@@ -61,7 +61,7 @@ export default function ParrainagePage() {
   };
 
   return (
-    <div className="bg-[#FFFEFC] min-h-screen py-14 lg:py-24">
+    <div className="min-h-screen py-14 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Header */}

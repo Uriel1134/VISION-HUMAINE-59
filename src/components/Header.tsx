@@ -106,7 +106,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#FFFEFC]/98 backdrop-blur-lg border-t border-slate-100 px-6 py-5 space-y-3 shadow-xl animate-fade-in">
+        <div className="lg:hidden bg-[#FAF8F5]/98 backdrop-blur-lg border-t border-slate-200/80 px-6 py-5 space-y-3 shadow-xl animate-fade-in">
           {NAV_LINKS.map((link, idx) => (
             <Link
               key={idx}
@@ -118,11 +118,11 @@ export const Header: React.FC = () => {
               <ArrowRight className="w-4 h-4 text-slate-400" />
             </Link>
           ))}
-          <div className="pt-3 border-t border-slate-100">
+          <div className="pt-3 border-t border-slate-200/80">
             <Link
               href="/don"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 py-3.5 rounded-[30px] font-bold text-sm text-[#FFFEFC] bg-[#D72229] hover:bg-[#AB161C] shadow-md"
+              className="w-full flex items-center justify-center gap-2 py-3.5 rounded-[30px] font-bold text-sm text-[#FAF8F5] bg-[#D72229] hover:bg-[#AB161C] shadow-md"
             >
               <span>Faire un don en ligne</span>
               <ArrowRight className="w-4 h-4" />

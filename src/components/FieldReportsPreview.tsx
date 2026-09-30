@@ -6,7 +6,7 @@ import { ARTICLES_DATA } from '@/lib/data';
 
 export const FieldReportsPreview: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 bg-[#FFFEFC] border-t border-slate-100" id="actualites">
+    <section className="py-12 sm:py-16 bg-transparent border-t border-slate-200/60" id="actualites">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header with Title and Link */}

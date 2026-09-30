@@ -246,7 +246,7 @@ function DonationPortalContent() {
   const activeAllocation = ALLOCATIONS.find(a => a.id === allocation)?.label || "Priorité Urgences & Besoins critiques";
 
   return (
-    <div className="bg-[#FAF9F6] min-h-screen py-8 sm:py-14">
+    <div className="min-h-screen py-8 sm:py-14">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {status === 'success' ? (

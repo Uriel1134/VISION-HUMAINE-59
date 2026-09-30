@@ -65,7 +65,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-[#FFFEFC] min-h-screen py-12 lg:py-20">
+    <div className="min-h-screen py-12 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Header */}
@@ -90,33 +90,64 @@ export default function ContactPage() {
               </h2>
 
               <div className="space-y-4 text-xs sm:text-sm">
+                {/* Siège France */}
                 <div className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5" />
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#292D77] flex items-center justify-center flex-shrink-0 border border-blue-100">
+                    <MapPin className="w-5 h-5 text-[#292D77]" />
                   </div>
                   <div>
-                    <strong className="text-slate-900 block font-bold">Siège & Antennes</strong>
-                    <span className="text-slate-600 leading-relaxed">{NGO_INFO.address}</span>
+                    <div className="flex items-center gap-2">
+                      <strong className="text-slate-900 block font-bold">Siège Social (France)</strong>
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-100 text-[#292D77]">France</span>
+                    </div>
+                    <span className="text-slate-600 leading-relaxed font-medium">{NGO_INFO.siegeFrance}</span>
                   </div>
                 </div>
 
+                {/* Annexe Bénin */}
                 <div className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-red-50 text-[#D72229] flex items-center justify-center flex-shrink-0 border border-red-100">
+                    <MapPin className="w-5 h-5 text-[#D72229]" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <strong className="text-slate-900 block font-bold">Annexe (Bénin)</strong>
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-red-100 text-[#D72229]">Bénin</span>
+                    </div>
+                    <span className="text-slate-600 leading-relaxed font-medium">{NGO_INFO.annexeBenin}</span>
+                  </div>
+                </div>
+
+                {/* Téléphone & WhatsApp */}
+                <div className="flex items-start gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0 border border-emerald-100">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <strong className="text-slate-900 block font-bold">Téléphone & WhatsApp</strong>
-                    <span className="text-slate-600 font-mono">{NGO_INFO.phone}</span>
+                    <a 
+                      href={`tel:${NGO_INFO.phoneRaw}`}
+                      className="text-slate-700 font-mono font-bold hover:text-emerald-700 transition-colors block"
+                    >
+                      {NGO_INFO.phone}
+                    </a>
+                    <span className="text-[11px] text-emerald-700 font-semibold">Appel direct / WhatsApp disponible</span>
                   </div>
                 </div>
 
+                {/* Email */}
                 <div className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 border border-amber-100">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <strong className="text-slate-900 block font-bold">Courrier Électronique</strong>
-                    <span className="text-slate-600">{NGO_INFO.email}</span>
+                    <a 
+                      href={`mailto:${NGO_INFO.email}`}
+                      className="text-slate-600 hover:text-[#292D77] transition-colors"
+                    >
+                      {NGO_INFO.email}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -126,15 +157,15 @@ export default function ContactPage() {
                 <div className="flex items-center gap-3">
                   <MessageCircle className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                   <div>
-                    <p className="text-xs font-bold text-emerald-950">Assistance WhatsApp</p>
-                    <p className="text-[11px] text-emerald-700">Réponse sous quelques heures</p>
+                    <p className="text-xs font-bold text-emerald-950">Assistance WhatsApp Directe</p>
+                    <p className="text-[11px] text-emerald-700">{NGO_INFO.phone}</p>
                   </div>
                 </div>
                 <a
-                  href={`https://wa.me/2290166007047?text=Bonjour%20VISION%20HUMAINE%2059,%20je%20souhaite%20vous%20contacter`}
+                  href={NGO_INFO.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors"
+                  className="px-3.5 py-1.5 rounded-[30px] bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-sm whitespace-nowrap"
                 >
                   Discuter
                 </a>

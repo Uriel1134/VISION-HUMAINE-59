@@ -2,7 +2,7 @@ import React from 'react';
 
 export const PartnersSection: React.FC = () => {
   return (
-    <section className="py-10 sm:py-14 bg-[#FFFEFC] border-t border-slate-100" id="partenaires">
+    <section className="py-10 sm:py-14 bg-transparent border-t border-slate-200/60" id="partenaires">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

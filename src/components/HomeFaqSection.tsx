@@ -9,7 +9,7 @@ export const HomeFaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-10 sm:py-14 bg-[#FFFEFC] border-t border-slate-100" id="faq">
+    <section className="py-10 sm:py-14 bg-transparent border-t border-slate-200/60" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

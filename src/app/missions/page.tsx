@@ -130,10 +130,10 @@ export default function MissionsPage() {
     : DOMAIN_DETAILS.filter(d => d.id === activeFilter);
 
   return (
-    <div className="bg-[#FFFEFC] min-h-screen">
+    <div className="min-h-screen">
       
       {/* 1. Hero Header Banner */}
-      <section className="bg-[#FFFEFC] border-b border-slate-100 pt-10 pb-12 sm:pt-14 sm:pb-16 relative overflow-hidden">
+      <section className="border-b border-slate-200/60 pt-10 pb-12 sm:pt-14 sm:pb-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#292D77] tracking-tight leading-[1.12] mb-4">
