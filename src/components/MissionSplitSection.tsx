@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Users, Sparkles, Target } from '
 
 export const MissionSplitSection: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 bg-[#FFFEFC] relative overflow-hidden" id="notre-mission">
+    <section className="py-12 sm:py-16 bg-transparent relative overflow-hidden" id="notre-mission">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch">
           

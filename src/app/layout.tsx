@@ -96,26 +96,46 @@ export default function RootLayout({
       <head>
         <StructuredData />
       </head>
-      <body className="flex flex-col min-h-screen bg-[#FAF8F5] text-[#14172B] antialiased font-sans relative selection:bg-[#292D77] selection:text-[#FAF8F5]">
+      <body className="flex flex-col min-h-screen bg-[#F6F1E8] text-[#14172B] antialiased font-sans relative selection:bg-[#292D77] selection:text-[#F6F1E8]">
         
-        {/* Fixed Watermark Background in Filigrane (Warm White Atmosphere) */}
+        {/* Fixed Watermark Background in Filigrane (Warm Atmosphere) */}
         <div 
-          className="fixed inset-0 pointer-events-none -z-10 flex items-center justify-center overflow-hidden select-none"
+          className="fixed inset-0 pointer-events-none -z-10 overflow-hidden select-none"
           aria-hidden="true"
         >
-          {/* Subtle Warm Light Ambient Blooms */}
-          <div className="absolute -top-32 -right-32 w-[650px] h-[650px] bg-[#292D77]/[0.025] rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 -left-32 w-[600px] h-[600px] bg-[#D72229]/[0.018] rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-32 right-1/4 w-[700px] h-[700px] bg-amber-500/[0.015] rounded-full blur-3xl"></div>
+          {/* Subtle Warm Amber & Terracotta Ambient Blooms */}
+          <div className="absolute -top-32 -right-32 w-[700px] h-[700px] bg-amber-600/[0.04] rounded-full blur-3xl"></div>
+          <div className="absolute top-1/3 -left-32 w-[650px] h-[650px] bg-[#D72229]/[0.035] rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-32 right-1/4 w-[750px] h-[750px] bg-[#292D77]/[0.035] rounded-full blur-3xl"></div>
 
-          {/* Persistent subtle watermark logo in filigrane */}
-          <div className="relative w-[320px] h-[320px] sm:w-[480px] sm:h-[480px] lg:w-[620px] lg:h-[620px] opacity-[0.038] grayscale contrast-125">
+          {/* Center Giant Watermark Logo */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[540px] sm:h-[540px] lg:w-[700px] lg:h-[700px] opacity-[0.13] mix-blend-multiply pointer-events-none">
             <Image
               src="/images/logo.jpg"
               alt=""
               fill
               className="object-contain"
               priority
+            />
+          </div>
+
+          {/* Top-Right Secondary Filigrane Accent */}
+          <div className="absolute top-20 right-4 lg:right-16 w-52 h-52 lg:w-72 lg:h-72 opacity-[0.09] mix-blend-multiply pointer-events-none">
+            <Image
+              src="/images/logo.jpg"
+              alt=""
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          {/* Bottom-Left Secondary Filigrane Accent */}
+          <div className="absolute bottom-24 left-4 lg:left-16 w-52 h-52 lg:w-72 lg:h-72 opacity-[0.09] mix-blend-multiply pointer-events-none">
+            <Image
+              src="/images/logo.jpg"
+              alt=""
+              fill
+              className="object-contain"
             />
           </div>
         </div>

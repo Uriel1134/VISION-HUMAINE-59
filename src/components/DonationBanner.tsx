@@ -18,7 +18,7 @@ export const DonationBanner: React.FC = () => {
   const currentImpact = PRESETS.find(p => p.amount === selectedAmt) || PRESETS[1];
 
   return (
-    <section className="py-12 sm:py-16 bg-[#FFFEFC] relative overflow-hidden" id="don-banner">
+    <section className="py-12 sm:py-16 bg-transparent relative overflow-hidden" id="don-banner">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="relative rounded-3xl bg-gradient-to-br from-[#14172B] via-[#292D77] to-[#14172B] text-[#FFFEFC] border border-slate-700/60 shadow-2xl overflow-hidden">

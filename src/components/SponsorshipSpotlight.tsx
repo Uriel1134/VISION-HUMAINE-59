@@ -7,7 +7,7 @@ import { GraduationCap, ArrowRight, Stethoscope, Utensils } from 'lucide-react';
 
 export const SponsorshipSpotlight: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 bg-[#FFFEFC] border-y border-slate-100 relative overflow-hidden" id="parrainage-spotlight">
+    <section className="py-12 sm:py-16 bg-transparent border-y border-[#E8DFC8]/60 relative overflow-hidden" id="parrainage-spotlight">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10 sm:space-y-12">
         
         {/* Section Header */}
