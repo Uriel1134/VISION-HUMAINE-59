@@ -11,17 +11,17 @@
     --font-subtitle: 'Petrosans', 'PetroSans', 'Petro Sans', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --color-brand-blue: #292D77;
     --color-brand-red: #D72229;
-    --color-brand-white: #F6F1E8;
+    --color-brand-white: #F4EFE6;
   }
 
   html {
     scroll-behavior: smooth;
     color-scheme: light;
-    background-color: #F6F1E8;
+    background-color: #F4EFE6;
   }
 
   body {
-    background-color: #F6F1E8;
+    background-color: #F4EFE6;
     color: #14172B;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;

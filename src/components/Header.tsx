@@ -32,8 +32,8 @@ export const Header: React.FC = () => {
   return (
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${
       scrolled 
-        ? 'bg-[#F6F1E8]/95 backdrop-blur-md shadow-sm border-b border-[#E8DFC8]/70 py-3' 
-        : 'bg-[#F6F1E8]/90 backdrop-blur-sm border-b border-[#E8DFC8]/60 py-4'
+        ? 'bg-[#F4EFE6]/95 backdrop-blur-md shadow-sm border-b border-[#E2D5C3]/80 py-3' 
+        : 'bg-[#F4EFE6]/90 backdrop-blur-sm border-b border-[#E2D5C3]/60 py-4'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">

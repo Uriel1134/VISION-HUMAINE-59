@@ -58,6 +58,7 @@ export interface GalleryPhoto {
   src: string;
   caption: string;
   alt: string;
+  mediaType?: 'image' | 'video';
 }
 
 export interface GalleryProject {

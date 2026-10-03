@@ -5,7 +5,7 @@ import { ArrowRight, ShieldCheck, CheckCircle2, Sparkles } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F6F1E8] min-h-[340px] sm:min-h-[440px] lg:min-h-[540px] flex items-center border-b border-[#E8DFC8]/70">
+    <section className="relative w-full overflow-hidden bg-[#F4EFE6] min-h-[340px] sm:min-h-[440px] lg:min-h-[540px] flex items-center border-b border-[#E2D5C3]/70">
       
       {/* 1. Full-Width Authentic Background Photo (Active on Mobile & Desktop) */}
       <div className="absolute inset-0 w-full h-full z-0">
@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 pointer-events-none hidden lg:block"
           style={{
-            background: 'linear-gradient(to right, #F6F1E8 0%, #F6F1E8 38%, rgba(246, 241, 232, 0.96) 50%, rgba(246, 241, 232, 0.72) 65%, rgba(246, 241, 232, 0.15) 85%, transparent 100%)'
+            background: 'linear-gradient(to right, #F4EFE6 0%, #F4EFE6 38%, rgba(244, 239, 230, 0.96) 50%, rgba(244, 239, 230, 0.72) 65%, rgba(244, 239, 230, 0.15) 85%, transparent 100%)'
           }}
         />
 
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 pointer-events-none lg:hidden"
           style={{
-            background: 'linear-gradient(175deg, rgba(246, 241, 232, 0.97) 0%, rgba(246, 241, 232, 0.92) 40%, rgba(246, 241, 232, 0.75) 70%, rgba(246, 241, 232, 0.35) 100%)'
+            background: 'linear-gradient(175deg, rgba(244, 239, 230, 0.97) 0%, rgba(244, 239, 230, 0.92) 40%, rgba(244, 239, 230, 0.75) 70%, rgba(244, 239, 230, 0.35) 100%)'
           }}
         />
       </div>

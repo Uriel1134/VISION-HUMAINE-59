@@ -365,9 +365,197 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
     ]
   },
   {
+    id: "glo-djigbe-2",
+    title: "Deuxième édition de partage dans l’orphelinat Demeure d’Amour, du docteur Léon Sacramento à Glo-Djigbé",
+    shortTitle: "Orphelinat Demeure d'Amour - 2ème Édition",
+    location: "Glo-Djigbé",
+    department: "Atlantique",
+    edition: "2ème Édition",
+    date: "Octobre 2026",
+    badge: "Orphelinat Dr Léon Sacramento",
+    description: "Deuxième mission de soutien humanitaire et de distribution de vivres, kits et matériels essentiels à l’orphelinat Demeure d’Amour du docteur Léon Sacramento à Glo-Djigbé au Bénin.",
+    photos: [
+      {
+        id: "glo2-1",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-1.jpeg",
+        caption: "Arrivée et déchargement des vivres et dons pour les pensionnaires de l'orphelinat",
+        alt: "Deuxième édition de partage à l'orphelinat Demeure d'amour Glo-Djigbé"
+      },
+      {
+        id: "glo2-2",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-2.jpeg",
+        caption: "Accueil chaleureux des enfants et présentation des actions de la journée",
+        alt: "Accueil des enfants orphelins à Glo-Djigbé"
+      },
+      {
+        id: "glo2-3",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-3.jpeg",
+        caption: "Mise en place des tables de dons et préparation de la remise solennelle",
+        alt: "Préparation des dons à l'orphelinat Demeure d'amour"
+      },
+      {
+        id: "glo2-4",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-4.jpeg",
+        caption: "Distribution des denrées alimentaires et produits de première nécessité",
+        alt: "Distribution alimentaire aux enfants"
+      },
+      {
+        id: "glo2-5",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-5.jpeg",
+        caption: "Remise personnalisée des fournitures et paquets aux pensionnaires",
+        alt: "Remise de fournitures aux orphelins"
+      },
+      {
+        id: "glo2-6",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-6.jpeg",
+        caption: "Échanges bienveillants entre les bénévoles de VH59 et les enfants",
+        alt: "Bénévoles avec les enfants à Glo-Djigbé"
+      },
+      {
+        id: "glo2-7",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-7.jpeg",
+        caption: "Sourires et joie partagée lors de la remise des dons d'amour",
+        alt: "Sourires des enfants de l'orphelinat"
+      },
+      {
+        id: "glo2-8",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-8.jpeg",
+        caption: "Moments fraternels au sein de la cour de l'orphelinat Demeure d'Amour",
+        alt: "Moments fraternels à Glo-Djigbé"
+      },
+      {
+        id: "glo2-9",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-9.jpeg",
+        caption: "Distribution des vêtements et chaussures collectés pour les enfants",
+        alt: "Distribution de vêtements à l'orphelinat"
+      },
+      {
+        id: "glo2-10",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-10.jpeg",
+        caption: "Coordination et organisation sur le terrain avec l'équipe dirigeante du centre",
+        alt: "Équipe VH59 et responsables de l'orphelinat"
+      },
+      {
+        id: "glo2-11",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-11.jpeg",
+        caption: "Accompagnement attentif des plus jeunes pensionnaires",
+        alt: "Accompagnement des tout-petits à Glo-Djigbé"
+      },
+      {
+        id: "glo2-12",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-12.jpeg",
+        caption: "Vérification et affectation des colis de soutien humanitaire",
+        alt: "Vérification des dotations humanitaires"
+      },
+      {
+        id: "glo2-13",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-13.jpeg",
+        caption: "Regard complice et remerciements chaleureux des encadrants",
+        alt: "Remerciements des encadrants de l'orphelinat"
+      },
+      {
+        id: "glo2-14",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-14.jpeg",
+        caption: "Immersion et communion au cœur des espaces de vie de l'orphelinat",
+        alt: "Immersion au sein de l'orphelinat"
+      },
+      {
+        id: "glo2-15",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-15.jpeg",
+        caption: "Échange fraternel avec le personnel soignant et éducatif",
+        alt: "Échange avec les éducateurs"
+      },
+      {
+        id: "glo2-16",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-16.jpeg",
+        caption: "Partage de repas et de collations avec tous les enfants",
+        alt: "Partage de collation avec les orphelins"
+      },
+      {
+        id: "glo2-17",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-17.jpeg",
+        caption: "Présentation des progrès accomplis depuis la 1ère édition",
+        alt: "Suivi des progrès des enfants"
+      },
+      {
+        id: "glo2-18",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-18.jpeg",
+        caption: "Instant d'encouragement et bénédiction partagée avec les volontaires",
+        alt: "Moment d'encouragement solidaire"
+      },
+      {
+        id: "glo2-19",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-19.jpeg",
+        caption: "Portrait de groupe des enfants avec leurs nouveaux équipements",
+        alt: "Groupe des enfants à Glo-Djigbé"
+      },
+      {
+        id: "glo2-20",
+        src: "/images/galerie/glo-djigbe-2/glo-djigbe-2-20.jpeg",
+        caption: "Grande photo collective immortalisant cette magnifique 2ème édition à Glo-Djigbé",
+        alt: "Photo finale 2ème édition orphelinat Demeure d'amour"
+      }
+    ]
+  },
+  {
+    id: "glo-djigbe-3",
+    title: "Troisième édition de partage dans l’orphelinat du docteur Léon Sacramento à Glo-Djigbé au Bénin",
+    shortTitle: "Orphelinat Demeure d'Amour - 3ème Édition",
+    location: "Glo-Djigbé",
+    department: "Atlantique",
+    edition: "3ème Édition",
+    date: "Octobre 2026",
+    badge: "Orphelinat Dr Léon Sacramento",
+    description: "Troisième vague de solidarité et d'accompagnement pérenne à l’orphelinat Demeure d’Amour à Glo-Djigbé : appui nutritionnel renforcé, fournitures et soutien continu aux enfants.",
+    photos: [
+      {
+        id: "glo3-1",
+        src: "/images/galerie/glo-djigbe-3/glo-djigbe-3-1.jpeg",
+        caption: "Arrivée de la 3ème délégation VH59 à l'orphelinat du Dr Léon Sacramento",
+        alt: "Troisième édition de partage à Glo-Djigbé"
+      },
+      {
+        id: "glo3-2",
+        src: "/images/galerie/glo-djigbe-3/glo-djigbe-3-2.jpeg",
+        caption: "Déploiement des stocks de vivres et dotations matérielles",
+        alt: "Stocks de vivres pour les orphelins"
+      },
+      {
+        id: "glo3-3",
+        src: "/images/galerie/glo-djigbe-3/glo-djigbe-3-3.jpeg",
+        caption: "Remise officielle et distribution aux jeunes pensionnaires",
+        alt: "Distribution des dons 3ème édition"
+      },
+      {
+        id: "glo3-4",
+        src: "/images/galerie/glo-djigbe-3/glo-djigbe-3-4.jpeg",
+        caption: "Dialogue chaleureux avec les responsables de l'orphelinat",
+        alt: "Échanges avec la direction de l'orphelinat"
+      },
+      {
+        id: "glo3-5",
+        src: "/images/galerie/glo-djigbe-3/glo-djigbe-3-5.jpeg",
+        caption: "Atelier et moment d'animation récréative avec les enfants",
+        alt: "Animation avec les enfants à Glo-Djigbé"
+      },
+      {
+        id: "glo3-6",
+        src: "/images/galerie/glo-djigbe-3/glo-djigbe-3-6.jpeg",
+        caption: "Soutien affectif et prise en charge des besoins urgents",
+        alt: "Soutien fraternel aux orphelins"
+      },
+      {
+        id: "glo3-7",
+        src: "/images/galerie/glo-djigbe-3/glo-djigbe-3-7.jpeg",
+        caption: "Photo de clôture scellant la fidélité de notre soutien à l'orphelinat de Glo-Djigbé",
+        alt: "Photo souvenir 3ème édition Glo-Djigbé"
+      }
+    ]
+  },
+  {
     id: "dassa-3",
     title: "Mission de partage dans le département des Collines à Dassa-Zoumè",
-    shortTitle: "Dassa-Zoumè (Collines)",
+    shortTitle: "Dassa-Zoumè (Collines) - Mission Vêtements",
     location: "Dassa-Zoumè",
     department: "Collines",
     edition: "Édition Collines",
@@ -380,6 +568,110 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
         src: "/images/galerie/dassa-3/dassa-3-1.jpg",
         caption: "Remise officielle et distribution de vêtements, habits et jouets aux enfants et familles de Dassa-Zoumè",
         alt: "Distribution de vêtements et jouets à Dassa-Zoumè dans les Collines"
+      }
+    ]
+  },
+  {
+    id: "dassa-4",
+    title: "Quatrième édition de partage à Dassa-Zoumè dans le département des Collines au Bénin",
+    shortTitle: "Dassa-Zoumè (Collines) - 4ème Édition",
+    location: "Dassa-Zoumè",
+    department: "Collines",
+    edition: "4ème Édition",
+    date: "Octobre 2026",
+    badge: "4ème Édition Collines",
+    description: "Quatrième grande édition de solidarité au cœur du département des Collines à Dassa-Zoumè : distribution massive de vivres, kits scolaires, habits et renforcement du soutien communautaire.",
+    photos: [
+      {
+        id: "dassa4-1",
+        src: "/images/galerie/dassa-4/dassa-4-1.jpeg",
+        caption: "Rassemblement solidaire au cœur de la commune de Dassa-Zoumè",
+        alt: "Quatrième édition de partage à Dassa-Zoumè"
+      },
+      {
+        id: "dassa4-2",
+        src: "/images/galerie/dassa-4/dassa-4-2.jpeg",
+        caption: "Présentation des dotations alimentaires et fournitures scolaires",
+        alt: "Dotations scolaires et vivres à Dassa-Zoumè"
+      },
+      {
+        id: "dassa4-3",
+        src: "/images/galerie/dassa-4/dassa-4-3.jpeg",
+        caption: "Distribution des kits scolaires aux écoliers des Collines",
+        alt: "Distribution de kits scolaires à Dassa"
+      },
+      {
+        id: "dassa4-4",
+        src: "/images/galerie/dassa-4/dassa-4-4.jpeg",
+        caption: "Mise à disposition des colis de vivres aux familles vulnérables",
+        alt: "Colis de vivres pour les familles"
+      },
+      {
+        id: "dassa4-5",
+        src: "/images/galerie/dassa-4/dassa-4-5.jpeg",
+        caption: "Remise de vêtements et chaussures pour les enfants défavorisés",
+        alt: "Remise d'habits aux enfants des Collines"
+      },
+      {
+        id: "dassa4-6",
+        src: "/images/galerie/dassa-4/dassa-4-6.jpeg",
+        caption: "Coordination active avec les responsables et représentants locaux",
+        alt: "Coordination locale à Dassa-Zoumè"
+      },
+      {
+        id: "dassa4-7",
+        src: "/images/galerie/dassa-4/dassa-4-7.jpeg",
+        caption: "Sourires rayonnants des écoliers bénéficiaires de la 4ème édition",
+        alt: "Sourires des enfants bénéficiaires à Dassa"
+      },
+      {
+        id: "dassa4-8",
+        src: "/images/galerie/dassa-4/dassa-4-8.jpeg",
+        caption: "Engagement indéfectible de nos bénévoles au contact des bénéficiaires",
+        alt: "Bénévoles VH59 sur le terrain à Dassa"
+      },
+      {
+        id: "dassa4-9",
+        src: "/images/galerie/dassa-4/dassa-4-9.jpeg",
+        caption: "Organisation méthodique de la file d'attente pour un partage équitable",
+        alt: "Organisation de la distribution"
+      },
+      {
+        id: "dassa4-10",
+        src: "/images/galerie/dassa-4/dassa-4-10.jpeg",
+        caption: "Témoignage de gratitude des mères de famille et des aînés",
+        alt: "Gratitude des familles de Dassa-Zoumè"
+      },
+      {
+        id: "dassa4-11",
+        src: "/images/galerie/dassa-4/dassa-4-11.jpeg",
+        caption: "Soutien éducatif et mots d'encouragement adressés aux écoliers",
+        alt: "Encouragement scolaire aux enfants"
+      },
+      {
+        id: "dassa4-12",
+        src: "/images/galerie/dassa-4/dassa-4-12.jpeg",
+        caption: "Vue générale de la cérémonie de remise solennelle des dons",
+        alt: "Cérémonie de remise solennelle à Dassa"
+      },
+      {
+        id: "dassa4-13",
+        src: "/images/galerie/dassa-4/dassa-4-13.jpeg",
+        caption: "Moments d'échange culturel et d'unité fraternelle dans les Collines",
+        alt: "Unité fraternelle dans les Collines"
+      },
+      {
+        id: "dassa4-14",
+        src: "/images/galerie/dassa-4/dassa-4-14.jpeg",
+        caption: "Photo souvenir d'ensemble de la 4ème édition de partage à Dassa-Zoumè",
+        alt: "Photo souvenir 4ème édition Dassa-Zoumè"
+      },
+      {
+        id: "dassa4-video-1",
+        src: "/images/galerie/dassa-4/dassa-4-video-1.mp4",
+        caption: "Reportage vidéo : Ambiance et remise des dons en direct à Dassa-Zoumè",
+        alt: "Vidéo reportage 4ème édition Dassa-Zoumè",
+        mediaType: "video"
       }
     ]
   },
@@ -454,6 +746,184 @@ export const GALLERY_PROJECTS_DATA: GalleryProject[] = [
         src: "/images/galerie/azowlisse-2/azowlisse-2-4.jpg",
         caption: "Grande photo de famille témoignant de la persévérance et de la solidarité en action",
         alt: "Grande photo de famille 2ème édition Azowlissè"
+      }
+    ]
+  },
+  {
+    id: "stands-cambresis",
+    title: "Les différents stands de l’association sur les marchés dans le Cambrésis pour faire connaître les produits locaux du Bénin",
+    shortTitle: "Stands Marchés du Cambrésis",
+    location: "Cambrésis (Nord)",
+    department: "France / 59",
+    edition: "Sensibilisation & Artisanat",
+    date: "2026",
+    badge: "Marchés & Produits Locaux du Bénin",
+    description: "Présence active et engagée des bénévoles de VISION HUMAINE 59 sur les marchés du Cambrésis pour faire découvrir la richesse des produits du terroir béninois, sensibiliser le public et financer nos actions humanitaires.",
+    photos: [
+      {
+        id: "stand-1",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-1.jpeg",
+        caption: "Installation et mise en valeur du stand VISION HUMAINE 59 sur le marché",
+        alt: "Stand solidaire de VISION HUMAINE 59 dans le Cambrésis"
+      },
+      {
+        id: "stand-2",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-2.jpeg",
+        caption: "Exposition des produits locaux et créations artisanales venues du Bénin",
+        alt: "Produits locaux du Bénin sur le stand"
+      },
+      {
+        id: "stand-3",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-3.jpeg",
+        caption: "Accueil convivial des visiteurs et explications sur les projets humanitaires",
+        alt: "Accueil des visiteurs sur le marché"
+      },
+      {
+        id: "stand-4",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-4.jpeg",
+        caption: "Présentation des épices, huiles et douceurs traditionnelles béninoises",
+        alt: "Épices et produits du terroir béninois"
+      },
+      {
+        id: "stand-5",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-5.jpeg",
+        caption: "Mobilisation souriante de l'équipe de bénévoles du Nord de la France",
+        alt: "Bénévoles VH59 sur le marché du Cambrésis"
+      },
+      {
+        id: "stand-6",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-6.jpeg",
+        caption: "Échanges chaleureux avec les passants et sensibilisation à nos actions",
+        alt: "Sensibilisation du public aux actions de l'ONG"
+      },
+      {
+        id: "stand-7",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-7.jpeg",
+        caption: "Mise en avant du savoir-faire et de la culture béninoise",
+        alt: "Valorisation de la culture et de l'artisanat du Bénin"
+      },
+      {
+        id: "stand-8",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-8.jpeg",
+        caption: "Stand aux couleurs de VISION HUMAINE 59 attirant curieux et bienfaiteurs",
+        alt: "Stand solidaire animé"
+      },
+      {
+        id: "stand-9",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-9.jpeg",
+        caption: "Découverte des confections textiles et accessoires solidaires",
+        alt: "Textiles et accessoires du Bénin"
+      },
+      {
+        id: "stand-10",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-10.jpeg",
+        caption: "Photo d'équipe des bénévoles de VISION HUMAINE 59 sur le stand du Cambrésis",
+        alt: "Équipe VH59 réunie sur le stand du Cambrésis"
+      },
+      {
+        id: "stand-11",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-11.jpeg",
+        caption: "Table d'exposition des produits locaux, statuettes d'art et artisanat traditionnel du Bénin",
+        alt: "Table d'exposition de produits et artisanat béninois"
+      },
+      {
+        id: "stand-video-1",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-video-1.mp4",
+        caption: "Vidéo immersion : Présentation animée du stand et des produits locaux du Bénin",
+        alt: "Vidéo du stand associatif dans le Cambrésis",
+        mediaType: "video"
+      },
+      {
+        id: "stand-video-2",
+        src: "/images/galerie/stands-cambresis/stand-cambresis-video-2.mp4",
+        caption: "Vidéo reportage : Mobilisation de nos bénévoles et échanges avec le public",
+        alt: "Vidéo de la mobilisation des bénévoles",
+        mediaType: "video"
+      }
+    ]
+  },
+  {
+    id: "entrepot-cotonou",
+    title: "Entrepôt de tri des dons à Cotonou au Bénin par les membres de l’association VISION HUMAINE 59",
+    shortTitle: "Entrepôt de Tri des Dons (Cotonou)",
+    location: "Cotonou (Tchankpamè)",
+    department: "Littoral",
+    edition: "Logistique Terrain",
+    date: "Octobre 2026",
+    badge: "Logistique & Tri des Dons",
+    description: "Phase essentielle de notre chaîne logistique : réception, déballage, contrôle rigoureux et tri minutieux des vêtements, fournitures et vivres par les membres dévoués de VISION HUMAINE 59 à Cotonou avant acheminement vers les orphelinats et communautés.",
+    photos: [
+      {
+        id: "entrepot-1",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-1.jpeg",
+        caption: "Arrivée et déchargement des cargaisons de dons à l'entrepôt de Cotonou",
+        alt: "Arrivée des dons à l'entrepôt de Cotonou"
+      },
+      {
+        id: "entrepot-2",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-2.jpeg",
+        caption: "Organisation générale et préparation des espaces de tri et de stockage",
+        alt: "Espace de tri à Cotonou"
+      },
+      {
+        id: "entrepot-3",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-3.jpeg",
+        caption: "Tri méthodique des vêtements par tranche d'âge et destination",
+        alt: "Tri des vêtements par les bénévoles"
+      },
+      {
+        id: "entrepot-4",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-4.jpeg",
+        caption: "Contrôle qualité et vérification de l'état des fournitures collectées",
+        alt: "Contrôle qualité des fournitures"
+      },
+      {
+        id: "entrepot-5",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-5.jpeg",
+        caption: "Membres de VISION HUMAINE 59 mobilisés pour le conditionnement",
+        alt: "Membres VH59 au travail à l'entrepôt"
+      },
+      {
+        id: "entrepot-6",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-6.jpeg",
+        caption: "Empilement et étiquetage soigné des cartons de dotations",
+        alt: "Cartons de dotations étiquetés"
+      },
+      {
+        id: "entrepot-7",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-7.jpeg",
+        caption: "Vérification des vivres non périssables avant distribution",
+        alt: "Vérification des stocks alimentaires"
+      },
+      {
+        id: "entrepot-8",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-8.jpeg",
+        caption: "Mise sous sacs et emballages sécurisés pour le transport",
+        alt: "Emballage sécurisé des dons"
+      },
+      {
+        id: "entrepot-9",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-9.jpeg",
+        caption: "Coordination logistique pour les convois vers Glo-Djigbé et Dassa",
+        alt: "Coordination des convois humanitaires"
+      },
+      {
+        id: "entrepot-10",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-10.jpeg",
+        caption: "Ambiance solidaire et engagement sans faille des équipes locales",
+        alt: "Équipes locales engagées à Cotonou"
+      },
+      {
+        id: "entrepot-11",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-11.jpeg",
+        caption: "Finalisation du chargement des colis humanitaires pour départ terrain",
+        alt: "Chargement des colis humanitaires"
+      },
+      {
+        id: "entrepot-12",
+        src: "/images/galerie/entrepot-cotonou/entrepot-cotonou-12.jpeg",
+        caption: "Vue générale de l'entrepôt de Cotonou prêt pour les distributions",
+        alt: "Vue générale entrepôt Cotonou VISION HUMAINE 59"
       }
     ]
   }
