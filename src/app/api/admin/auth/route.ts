@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // In-memory rate limiting map for brute-force protection
 const failedAttempts = new Map<string, { count: number; blockedUntil: number }>();
 
