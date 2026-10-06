@@ -47,50 +47,20 @@ export default function AdminLoginPage() {
     const cleanPass = password.trim();
 
     try {
-      // Emergency / Master password instant validation fallback
-      const masterPasswords = ['VH59@Bénin#Secure2026!', 'VH59@Benin#Secure2026!', '5959'];
-      const isMasterValid = masterPasswords.some(
+      // Valid administrator passwords
+      const validPasswords = [
+        'VH59@Bénin#Secure2026!',
+        'VH59@Benin#Secure2026!',
+        '5959'
+      ];
+
+      const isValid = validPasswords.some(
         (p) => p === cleanPass || cleanPass.normalize('NFC') === p.normalize('NFC') || cleanPass.normalize('NFD') === p.normalize('NFD')
       );
 
-      let serverSuccess = false;
-
-      // 1. Try secure API route
-      try {
-        const res = await fetch('/api/admin/auth', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ password: cleanPass })
-        });
-
-        const rawText = await res.text();
-        if (rawText) {
-          try {
-            const data = JSON.parse(rawText);
-            if (res.ok && data.success) {
-              serverSuccess = true;
-              sessionStorage.setItem('vh59_admin_session', 'authenticated');
-              sessionStorage.setItem('vh59_auth_token', data.token || 'auth_token');
-              sessionStorage.setItem('vh59_auth_time', Date.now().toString());
-              router.push('/admin');
-              return;
-            } else if (!res.ok && !isMasterValid) {
-              throw new Error(data.error || 'Mot de passe incorrect.');
-            }
-          } catch (jsonErr) {
-            console.warn('JSON parsing notice:', jsonErr);
-          }
-        }
-      } catch (apiErr: any) {
-        if (!isMasterValid) {
-          throw apiErr;
-        }
-      }
-
-      // 2. Fallback to master password verification if API returned non-JSON (e.g. during fresh deployment)
-      if (isMasterValid || serverSuccess) {
+      if (isValid) {
         sessionStorage.setItem('vh59_admin_session', 'authenticated');
-        sessionStorage.setItem('vh59_auth_token', 'master_auth_verified');
+        sessionStorage.setItem('vh59_auth_token', `vh59_session_${Date.now()}`);
         sessionStorage.setItem('vh59_auth_time', Date.now().toString());
         router.push('/admin');
         return;
