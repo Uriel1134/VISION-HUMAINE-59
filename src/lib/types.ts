@@ -74,3 +74,20 @@ export interface GalleryProject {
   photos: GalleryPhoto[];
 }
 
+export interface DonationRecord {
+  id: string;
+  reference: string;
+  transactionId?: string;
+  donorName: string;
+  donorEmail: string;
+  donorPhone?: string;
+  amount: number;
+  currency: string;
+  type: 'once' | 'monthly';
+  allocation: string;
+  paymentMethod: string;
+  status: 'CONFIRMED' | 'PENDING' | 'FAILED';
+  createdAt: string;
+}
+
+

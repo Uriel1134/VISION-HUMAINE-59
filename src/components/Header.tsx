@@ -29,6 +29,11 @@ export const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Hide public navigation header on admin dashboard routes
+  if (pathname?.startsWith('/admin')) {
+    return null;
+  }
+
   return (
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${
       scrolled 

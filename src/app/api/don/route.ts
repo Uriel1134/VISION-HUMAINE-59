@@ -35,6 +35,29 @@ export async function POST(request: Request) {
     };
 
     console.log('[SECURE DONATION PROCESSED]:', sanitizedReceipt);
+    
+    // Save to Supabase if configured
+    try {
+      const { createDonation } = await import('@/lib/supabase');
+      const normalizedType: 'once' | 'monthly' = type === 'mensuel' ? 'monthly' : 'once';
+      await createDonation({
+        id: reference,
+        reference,
+        transactionId: transactionId || reference,
+        donorName: sanitizeText(donorName),
+        donorEmail: sanitizeText(donorEmail),
+        donorPhone: donorPhone ? sanitizeText(donorPhone) : undefined,
+        amount,
+        currency,
+        type: normalizedType,
+        allocation,
+        paymentMethod,
+        status: 'CONFIRMED',
+        createdAt: sanitizedReceipt.date
+      });
+    } catch (dbErr) {
+      console.warn('[SUPABASE DONATION PERSIST WARNING]:', dbErr);
+    }
 
     return NextResponse.json({
       success: true,

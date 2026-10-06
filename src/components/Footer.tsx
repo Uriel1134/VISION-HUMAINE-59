@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { 
   ArrowRight, 
   Mail, 
@@ -10,6 +13,12 @@ import {
 import { NGO_INFO } from '@/lib/data';
 
 export const Footer: React.FC = () => {
+  const pathname = usePathname();
+
+  // Hide public website footer on admin routes
+  if (pathname?.startsWith('/admin')) {
+    return null;
+  }
   return (
     <footer className="bg-[#0A0F1D] text-slate-300 border-t border-slate-800/80 relative overflow-hidden">
       
@@ -255,6 +264,9 @@ export const Footer: React.FC = () => {
               </Link>
               <Link href="/contact" className="hover:text-white transition-colors">
                 Politique de confidentialité
+              </Link>
+              <Link href="/admin" className="hover:text-amber-400 text-slate-500 transition-colors flex items-center gap-1 font-medium">
+                Espace Admin
               </Link>
               <div className="flex items-center gap-1.5 ml-2">
                 <span className="w-2 h-2 bg-[#292D77] rounded-full"></span>

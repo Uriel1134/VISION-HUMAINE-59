@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { GALLERY_PROJECTS_DATA } from '@/lib/data';
 import { GalleryPhoto, GalleryProject } from '@/lib/types';
+import { getGalleryProjects } from '@/lib/supabase';
 
 interface FlatPhoto extends GalleryPhoto {
   projectTitle: string;
@@ -30,11 +31,31 @@ interface FlatPhoto extends GalleryPhoto {
 }
 
 export const ProjectsGallery: React.FC = () => {
+  const [galleryProjects, setGalleryProjects] = useState<GalleryProject[]>(GALLERY_PROJECTS_DATA);
   const [activeTab, setActiveTab] = useState<string>('all');
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null);
 
+  // Fetch dynamic projects from Supabase on mount
+  useEffect(() => {
+    let isMounted = true;
+    async function loadDynamicGallery() {
+      try {
+        const liveProjects = await getGalleryProjects();
+        if (isMounted && liveProjects && liveProjects.length > 0) {
+          setGalleryProjects(liveProjects);
+        }
+      } catch (err) {
+        console.warn('Fallback to static gallery data:', err);
+      }
+    }
+    loadDynamicGallery();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   // Flatten all photos/videos for easy indexing in lightbox
-  const allPhotos: FlatPhoto[] = GALLERY_PROJECTS_DATA.flatMap((proj) =>
+  const allPhotos: FlatPhoto[] = galleryProjects.flatMap((proj) =>
     proj.photos.map((photo) => ({
       ...photo,
       projectTitle: proj.title,
@@ -48,8 +69,8 @@ export const ProjectsGallery: React.FC = () => {
 
   // Filter projects by active tab
   const displayedProjects: GalleryProject[] = activeTab === 'all'
-    ? GALLERY_PROJECTS_DATA
-    : GALLERY_PROJECTS_DATA.filter((p) => p.id === activeTab);
+    ? galleryProjects
+    : galleryProjects.filter((p) => p.id === activeTab);
 
   // Photos/videos visible in current tab view for lightbox navigation
   const displayedPhotos: FlatPhoto[] = activeTab === 'all'
@@ -154,7 +175,7 @@ export const ProjectsGallery: React.FC = () => {
             </span>
           </button>
 
-          {GALLERY_PROJECTS_DATA.map((project) => {
+          {galleryProjects.map((project) => {
             const isActive = activeTab === project.id;
             const videoCount = project.photos.filter((p) => p.mediaType === 'video').length;
             return (
@@ -338,7 +359,7 @@ export const ProjectsGallery: React.FC = () => {
 
           <div className="flex items-center gap-3">
             <span className="text-xs font-bold text-[#292D77] bg-blue-50 border border-blue-100 px-4 py-2 rounded-full whitespace-nowrap">
-              Total : {allPhotos.length} médias réels (photos & vidéos) répartis en {GALLERY_PROJECTS_DATA.length} missions
+              Total : {allPhotos.length} médias réels (photos & vidéos) répartis en {galleryProjects.length} missions
             </span>
           </div>
         </div>
