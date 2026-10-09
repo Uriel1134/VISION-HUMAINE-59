@@ -325,10 +325,12 @@ export default function AdminDashboardPage() {
       return;
     }
 
+    const targetId = editingProject ? editingProject.id : (projectForm.id || `mission-${Date.now()}`);
+
     try {
       if (supabase && isSupabaseConfigured()) {
         const payload = {
-          id: projectForm.id,
+          id: targetId,
           title: projectForm.title,
           short_title: projectForm.shortTitle,
           location: projectForm.location,
@@ -347,21 +349,22 @@ export default function AdminDashboardPage() {
       }
 
       setProjects((prev) => {
-        const exists = prev.some((p) => p.id === projectForm.id);
-        if (exists) {
-          return prev.map((p) => (p.id === projectForm.id ? { ...p, ...projectForm } : p));
+        if (editingProject) {
+          return prev.map((p) => (p.id === targetId ? { ...p, ...projectForm, id: targetId } : p));
         } else {
           const newProj: GalleryProject = {
             ...projectForm,
+            id: targetId,
             photos: []
           };
-          return [...prev, newProj];
+          // Put new category at the top of the list for immediate visibility
+          return [newProj, ...prev];
         }
       });
 
-      setActiveProjectId(projectForm.id);
+      setActiveProjectId(targetId);
       setIsProjectModalOpen(false);
-      showStatus('success', `Projet « ${projectForm.shortTitle} » enregistré avec succès !`);
+      showStatus('success', `Catégorie « ${projectForm.shortTitle} » enregistrée avec succès !`);
     } catch (err: any) {
       console.error('Error saving project:', err);
       showStatus('error', `Erreur lors de l'enregistrement : ${err.message || err}`);
